@@ -1,0 +1,94 @@
+{
+ "version": 1,
+ "generated": "2026-11-17",
+ "projection": {
+  "type": "equirectangular",
+  "mPerDeg": 111320,
+  "latRef": -19.9023,
+  "origin": {
+   "lat": -19.7642,
+   "lon": -44.0714
+  },
+  "note": "x = (lon - origin.lon) * mPerDeg * cos(latRef) * pxPerKm / 1000; y = (origin.lat - lat) * mPerDeg * pxPerKm / 1000"
+ },
+ "bbox": {
+  "south": -20.0404,
+  "west": -44.0714,
+  "north": -19.7642,
+  "east": -43.8506
+ },
+ "tileSize": 256,
+ "themes": {
+  "dark": {
+   "levels": [
+    {
+     "pxPerKm": 40,
+     "cols": 4,
+     "rows": 5,
+     "width": 1024,
+     "height": 1280,
+     "path": "dark/40/{x}_{y}.png",
+     "bytes": 153852,
+     "count": 20
+    },
+    {
+     "pxPerKm": 80,
+     "cols": 8,
+     "rows": 10,
+     "width": 2048,
+     "height": 2560,
+     "path": "dark/80/{x}_{y}.png",
+     "bytes": 1005806,
+     "count": 80
+    },
+    {
+     "pxPerKm": 160,
+     "cols": 15,
+     "rows": 20,
+     "width": 3840,
+     "height": 5120,
+     "path": "dark/160/{x}_{y}.png",
+     "bytes": 2555555,
+     "count": 300
+    }
+   ],
+   "bytes": 3715213
+  },
+  "light": {
+   "levels": [
+    {
+     "pxPerKm": 40,
+     "cols": 4,
+     "rows": 5,
+     "width": 1024,
+     "height": 1280,
+     "path": "light/40/{x}_{y}.png",
+     "bytes": 137565,
+     "count": 20
+    },
+    {
+     "pxPerKm": 80,
+     "cols": 8,
+     "rows": 10,
+     "width": 2048,
+     "height": 2560,
+     "path": "light/80/{x}_{y}.png",
+     "bytes": 888557,
+     "count": 80
+    },
+    {
+     "pxPerKm": 160,
+     "cols": 15,
+     "rows": 20,
+     "width": 3840,
+     "height": 5120,
+     "path": "light/160/{x}_{y}.png",
+     "bytes": 2227463,
+     "count": 300
+    }
+   ],
+   "bytes": 3253585
+  }
+ },
+ "attribution": "© colaboradores do OpenStreetMap (ODbL)"
+}
